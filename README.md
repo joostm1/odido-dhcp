@@ -4,10 +4,10 @@
 Here's the DHCP sequence for obtaining the IP address for the internet link (VLAN ID 100):
 
 
-[DHCP Discover](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-discover)
-[DHCP Offer](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-offer)
-[DHCP Request](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-request)
-[DHCP ACK](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-ack)
+## [DHCP Discover](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-discover)
+## [DHCP Offer](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-offer)
+## [DHCP Request](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-request)
+## [DHCP ACK](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-ack)
 
 # DHCP Discover
     Frame 362: 594 bytes on wire (4752 bits), 594 bytes captured (4752 bits)
