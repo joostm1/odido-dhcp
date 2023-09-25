@@ -3,11 +3,11 @@ DHCP sequence Zyxel device and Dutch internet provider Odido - previously T-Mobl
 
 Here's the DHCP sequence for obtaining the IP address for the internet link (VLAN ID 100):
 
-  No.	Time		Source		Destionation	Protocol
-  362	106.586809	0.0.0.0		255.255.255.255	DHCP		594	DHCP Discover - Transaction ID 0xf4012537
-  364	106.607043	10.68.0.2	10.68.211.232	DHCP		372	DHCP Offer    - Transaction ID 0xf4012537
-  365	106.615849	0.0.0.0		255.255.255.255	DHCP		594	DHCP Request  - Transaction ID 0xf4012537
-  369	106.637447	10.68.0.2	10.68.211.232	DHCP		372	DHCP ACK      - Transaction ID 0xf4012537
+    No.	Time		Source		Destionation	Protocol
+    362	106.586809	0.0.0.0		255.255.255.255	DHCP		594	DHCP Discover - Transaction ID 0xf4012537
+    364	106.607043	10.68.0.2	10.68.211.232	DHCP		372	DHCP Offer    - Transaction ID 0xf4012537
+    365	106.615849	0.0.0.0		255.255.255.255	DHCP		594	DHCP Request  - Transaction ID 0xf4012537
+    369	106.637447	10.68.0.2	10.68.211.232	DHCP		372	DHCP ACK      - Transaction ID 0xf4012537
 
 # DHCP Discover
 Frame 362: 594 bytes on wire (4752 bits), 594 bytes captured (4752 bits)
