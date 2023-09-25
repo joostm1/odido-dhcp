@@ -10,53 +10,53 @@ Here's the DHCP sequence for obtaining the IP address for the internet link (VLA
     369	106.637447	10.68.0.2	10.68.211.232	DHCP		372	DHCP ACK      - Transaction ID 0xf4012537
 
 # DHCP Discover
-Frame 362: 594 bytes on wire (4752 bits), 594 bytes captured (4752 bits)
-    Encapsulation type: Ethernet (1)
-    Arrival Time: Sep 21, 2023 12:18:32.626530000 W. Europe Summer Time
-    [Time shift for this packet: 0.000000000 seconds]
-    Epoch Time: 1695291512.626530000
-    [Time delta from previous captured frame: 0.029200000 seconds]
-    [Time delta from previous displayed frame: 0.000000000 seconds]
-    [Time since reference or first frame: 106.586809000 seconds]
-    Frame Number: 362
-    Frame Length: 594 bytes (4752 bits)
-    Capture Length: 594 bytes (4752 bits)
-    [Frame is marked: False]
-    [Frame is ignored: False]
-    [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:dhcp]
-    [Coloring Rule Name: UDP]
-    [Coloring Rule String: udp]
-Ethernet II, Src: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
-    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
-    Source: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
-    Type: 802.1Q Virtual LAN (0x8100)
-802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 100
-Internet Protocol Version 4, Src: 0.0.0.0, Dst: 255.255.255.255
-    0100 .... = Version: 4
-    .... 0101 = Header Length: 20 bytes (5)
-    Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
-    Total Length: 576
-    Identification: 0x0000 (0)
-    000. .... = Flags: 0x0
-    ...0 0000 0000 0000 = Fragment Offset: 0
-    Time to Live: 64
-    Protocol: UDP (17)
-    Header Checksum: 0x78ae [validation disabled]
-    [Header checksum status: Unverified]
-    Source Address: 0.0.0.0
-    Destination Address: 255.255.255.255
-User Datagram Protocol, Src Port: 68, Dst Port: 67
-    Source Port: 68
-    Destination Port: 67
-    Length: 556
-    Checksum: 0x73e9 [unverified]
-    [Checksum Status: Unverified]
-    [Stream index: 4]
-    [Timestamps]
-    UDP payload (548 bytes)
-Dynamic Host Configuration Protocol (Discover)
-    Message type: Boot Request (1)
-    Hardware type: Ethernet (0x01)
+    Frame 362: 594 bytes on wire (4752 bits), 594 bytes captured (4752 bits)
+     Encapsulation type: Ethernet (1)
+     Arrival Time: Sep 21, 2023 12:18:32.626530000 W. Europe Summer Time
+     [Time shift for this packet: 0.000000000 seconds]
+     Epoch Time: 1695291512.626530000
+     [Time delta from previous captured frame: 0.029200000 seconds]
+     [Time delta from previous displayed frame: 0.000000000 seconds]
+     [Time since reference or first frame: 106.586809000 seconds]
+     Frame Number: 362
+     Frame Length: 594 bytes (4752 bits)
+     Capture Length: 594 bytes (4752 bits)
+     [Frame is marked: False]
+     [Frame is ignored: False]
+     [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:dhcp]
+     [Coloring Rule Name: UDP]
+     [Coloring Rule String: udp]
+    Ethernet II, Src: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+     Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+     Source: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
+     Type: 802.1Q Virtual LAN (0x8100)
+     802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 100
+    Internet Protocol Version 4, Src: 0.0.0.0, Dst: 255.255.255.255
+     0100 .... = Version: 4
+     .... 0101 = Header Length: 20 bytes (5)
+     Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
+     Total Length: 576
+     Identification: 0x0000 (0)
+     000. .... = Flags: 0x0
+     ...0 0000 0000 0000 = Fragment Offset: 0
+     Time to Live: 64
+     Protocol: UDP (17)
+     Header Checksum: 0x78ae [validation disabled]
+     [Header checksum status: Unverified]
+     Source Address: 0.0.0.0
+     Destination Address: 255.255.255.255
+    User Datagram Protocol, Src Port: 68, Dst Port: 67
+     Source Port: 68
+     Destination Port: 67
+     Length: 556
+     Checksum: 0x73e9 [unverified]
+     [Checksum Status: Unverified]
+     [Stream index: 4]
+     [Timestamps]
+     UDP payload (548 bytes)
+    Dynamic Host Configuration Protocol (Discover)
+     Message type: Boot Request (1)
+     Hardware type: Ethernet (0x01)
     Hardware address length: 6
     Hops: 0
     Transaction ID: 0xf4012537
