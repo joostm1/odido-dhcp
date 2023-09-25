@@ -3,11 +3,11 @@
 
 Here's the DHCP sequence for obtaining the IP address for the internet link (VLAN ID 100):
 
-    Source		Destionation	Protocol
-    0.0.0.0		255.255.255.255	DHCP	DHCP Discover
-    10.68.0.2		10.68.211.232	DHCP	DHCP Offer
-    0.0.0.0		255.255.255.255	DHCP	DHCP Request
-    10.68.0.2		10.68.211.232	DHCP	DHCP ACK
+    Source	Destination	Protocol
+    0.0.0.0	255.255.255.255	DHCP	[DHCP Discover](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-discover)
+    10.68.0.2	10.68.211.232	DHCP	[DHCP Offer](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-offer)
+    0.0.0.0	255.255.255.255	DHCP	[DHCP Request](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-request)
+    10.68.0.2	10.68.211.232	DHCP	[DHCP ACK](https://github.com/joostm1/odido-dhcp/tree/main#dhcp-ack)
 
 # DHCP Discover
     Frame 362: 594 bytes on wire (4752 bits), 594 bytes captured (4752 bits)
