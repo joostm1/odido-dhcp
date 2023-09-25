@@ -1,13 +1,13 @@
 # odido-dhcp
-DHCP sequence Zyxel device and Dutch internet provider Odido - previously T-Moble.
+## DHCP sequence Zyxel device and Dutch internet provider Odido - previously T-Mobile.
 
 Here's the DHCP sequence for obtaining the IP address for the internet link (VLAN ID 100):
 
-No.	Time		Source		Destionation	Protocol
-362	106.586809	0.0.0.0		255.255.255.255	DHCP	594	DHCP Discover - Transaction ID 0xf4012537
-364	106.607043	10.68.0.2	10.68.211.232	DHCP	372	DHCP Offer    - Transaction ID 0xf4012537
-365	106.615849	0.0.0.0		255.255.255.255	DHCP	594	DHCP Request  - Transaction ID 0xf4012537
-369	106.637447	10.68.0.2	10.68.211.232	DHCP	372	#DHCP ACK      - Transaction ID 0xf4012537
+    Source		Destionation	Protocol
+    0.0.0.0		255.255.255.255	DHCP	DHCP Discover
+    10.68.0.2		10.68.211.232	DHCP	DHCP Offer
+    0.0.0.0		255.255.255.255	DHCP	DHCP Request
+    10.68.0.2		10.68.211.232	DHCP	DHCP ACK
 
 # DHCP Discover
     Frame 362: 594 bytes on wire (4752 bits), 594 bytes captured (4752 bits)
@@ -26,11 +26,11 @@ No.	Time		Source		Destionation	Protocol
         [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:dhcp]
         [Coloring Rule Name: UDP]
         [Coloring Rule String: udp]
-        Ethernet II, Src: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Ethernet II, Src: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
         Destination: Broadcast (ff:ff:ff:ff:ff:ff)
         Source: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
         Type: 802.1Q Virtual LAN (0x8100)
-        802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 100
+    802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 100
         Internet Protocol Version 4, Src: 0.0.0.0, Dst: 255.255.255.255
         0100 .... = Version: 4
         .... 0101 = Header Length: 20 bytes (5)
@@ -40,12 +40,12 @@ No.	Time		Source		Destionation	Protocol
         000. .... = Flags: 0x0
         ...0 0000 0000 0000 = Fragment Offset: 0
         Time to Live: 64
-        Protocol: UDP (17)
+      Protocol: UDP (17)
         Header Checksum: 0x78ae [validation disabled]
         [Header checksum status: Unverified]
         Source Address: 0.0.0.0
         Destination Address: 255.255.255.255
-        User Datagram Protocol, Src Port: 68, Dst Port: 67
+      User Datagram Protocol, Src Port: 68, Dst Port: 67
         Source Port: 68
         Destination Port: 67
         Length: 556
@@ -54,7 +54,7 @@ No.	Time		Source		Destionation	Protocol
         [Stream index: 4]
         [Timestamps]
         UDP payload (548 bytes)
-        Dynamic Host Configuration Protocol (Discover)
+    Dynamic Host Configuration Protocol (Discover)
         Message type: Boot Request (1)
         Hardware type: Ethernet (0x01)
         Hardware address length: 6
@@ -106,18 +106,18 @@ No.	Time		Source		Destionation	Protocol
         [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:dhcp]
         [Coloring Rule Name: UDP]
         [Coloring Rule String: udp]
-        Ethernet II, Src: Atrie_00:00:02 (00:0e:00:00:00:02), Dst: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
+      Ethernet II, Src: Atrie_00:00:02 (00:0e:00:00:00:02), Dst: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
         Destination: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
            Address: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
            .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
            .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
         Source: Atrie_00:00:02 (00:0e:00:00:00:02)
         Type: 802.1Q Virtual LAN (0x8100)
-        802.1Q Virtual LAN, PRI: 6, DEI: 0, ID: 100
+      802.1Q Virtual LAN, PRI: 6, DEI: 0, ID: 100
         110. .... .... .... = Priority: Internetwork Control (6)
         ...0 .... .... .... = DEI: Ineligible
         .... 0000 0110 0100 = ID: 100
-        Type: IPv4 (0x0800)
+      Type: IPv4 (0x0800)
         Internet Protocol Version 4, Src: 10.68.0.2, Dst: 10.68.211.232
         0100 .... = Version: 4
         .... 0101 = Header Length: 20 bytes (5)
@@ -132,7 +132,7 @@ No.	Time		Source		Destionation	Protocol
         [Header checksum status: Unverified]
         Source Address: 10.68.0.2
         Destination Address: 10.68.211.232
-        User Datagram Protocol, Src Port: 67, Dst Port: 68
+      User Datagram Protocol, Src Port: 67, Dst Port: 68
         Source Port: 67
         Destination Port: 68
         Length: 334
@@ -141,7 +141,7 @@ No.	Time		Source		Destionation	Protocol
         [Stream index: 5]
         [Timestamps]
         UDP payload (326 bytes)
-        Dynamic Host Configuration Protocol (Offer)
+    Dynamic Host Configuration Protocol (Offer)
         Message type: Boot Reply (2)
         Hardware type: Ethernet (0x01)
         Hardware address length: 6
@@ -230,7 +230,7 @@ No.	Time		Source		Destionation	Protocol
         [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:dhcp]
         [Coloring Rule Name: UDP]
         [Coloring Rule String: udp]
-        Ethernet II, Src: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+      Ethernet II, Src: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
         Destination: Broadcast (ff:ff:ff:ff:ff:ff)
            Address: Broadcast (ff:ff:ff:ff:ff:ff)
            .... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)
@@ -240,12 +240,12 @@ No.	Time		Source		Destionation	Protocol
            .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
            .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
         Type: 802.1Q Virtual LAN (0x8100)
-        802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 100
+      802.1Q Virtual LAN, PRI: 0, DEI: 0, ID: 100
         000. .... .... .... = Priority: Best Effort (default) (0)
         ...0 .... .... .... = DEI: Ineligible
         .... 0000 0110 0100 = ID: 100
         Type: IPv4 (0x0800)
-        Internet Protocol Version 4, Src: 0.0.0.0, Dst: 255.255.255.255
+      Internet Protocol Version 4, Src: 0.0.0.0, Dst: 255.255.255.255
         0100 .... = Version: 4
         .... 0101 = Header Length: 20 bytes (5)
         Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)
@@ -259,7 +259,7 @@ No.	Time		Source		Destionation	Protocol
         [Header checksum status: Unverified]
         Source Address: 0.0.0.0
         Destination Address: 255.255.255.255
-        User Datagram Protocol, Src Port: 68, Dst Port: 67
+      User Datagram Protocol, Src Port: 68, Dst Port: 67
         Source Port: 68
         Destination Port: 67
         Length: 556
@@ -268,7 +268,7 @@ No.	Time		Source		Destionation	Protocol
         [Stream index: 4]
         [Timestamps]
         UDP payload (548 bytes)
-        Dynamic Host Configuration Protocol (Request)
+      Dynamic Host Configuration Protocol (Request)
         Message type: Boot Request (1)
         Hardware type: Ethernet (0x01)
         Hardware address length: 6
@@ -327,7 +327,7 @@ No.	Time		Source		Destionation	Protocol
         [Protocols in frame: eth:ethertype:vlan:ethertype:ip:udp:dhcp]
         [Coloring Rule Name: UDP]
         [Coloring Rule String: udp]
-        Ethernet II, Src: Atrie_00:00:02 (00:0e:00:00:00:02), Dst: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
+      Ethernet II, Src: Atrie_00:00:02 (00:0e:00:00:00:02), Dst: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
         Destination: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
            Address: ZyxelCommuni_74:ac:d4 (d4:1a:d1:74:ac:d4)
            .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
@@ -337,12 +337,12 @@ No.	Time		Source		Destionation	Protocol
            .... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)
            .... ...0 .... .... .... .... = IG bit: Individual address (unicast)
         Type: 802.1Q Virtual LAN (0x8100)
-        802.1Q Virtual LAN, PRI: 6, DEI: 0, ID: 100
+      802.1Q Virtual LAN, PRI: 6, DEI: 0, ID: 100
         110. .... .... .... = Priority: Internetwork Control (6)
         ...0 .... .... .... = DEI: Ineligible
         .... 0000 0110 0100 = ID: 100
         Type: IPv4 (0x0800)
-        Internet Protocol Version 4, Src: 10.68.0.2, Dst: 10.68.211.232
+      Internet Protocol Version 4, Src: 10.68.0.2, Dst: 10.68.211.232
         0100 .... = Version: 4
         .... 0101 = Header Length: 20 bytes (5)
         Differentiated Services Field: 0xc0 (DSCP: CS6, ECN: Not-ECT)
@@ -361,7 +361,7 @@ No.	Time		Source		Destionation	Protocol
         [Header checksum status: Unverified]
         Source Address: 10.68.0.2
         Destination Address: 10.68.211.232
-        User Datagram Protocol, Src Port: 67, Dst Port: 68
+      User Datagram Protocol, Src Port: 67, Dst Port: 68
         Source Port: 67
         Destination Port: 68
         Length: 334
@@ -372,7 +372,7 @@ No.	Time		Source		Destionation	Protocol
            [Time since first frame: 0.030404000 seconds]
            [Time since previous frame: 0.030404000 seconds]
         UDP payload (326 bytes)
-        Dynamic Host Configuration Protocol (ACK)
+    Dynamic Host Configuration Protocol (ACK)
         Message type: Boot Reply (2)
         Hardware type: Ethernet (0x01)
         Hardware address length: 6
